@@ -28,6 +28,7 @@ $(document).on('keypress',function(){
     mem.push(boxes[gen]);
     startgame();
 });
+//startgame Function
 function startgame()
 {
     $('.instructions').html(`LEVEL:${gameLevel}`);
@@ -53,6 +54,7 @@ function startgame()
         }
     });
 }
+//levelUp
 function levelUp(){
     $('.box').off('click');
     var gen = Math.floor(Math.random()*4);
