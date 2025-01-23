@@ -71,3 +71,8 @@ h2
 {
     color: antiquewhite;
 }
+@media (max-width:786) {
+    .box-container{
+        transform: scale(0.6);
+    }
+}

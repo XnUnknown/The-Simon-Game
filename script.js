@@ -22,7 +22,7 @@ ch.on('click',function(event){
     clickEffect($(event.target));
 });
 //Defining Game Functions
-$(document).on('keypress',function(){
+$(document).on('keypress touchstart',function(){
     $('.instructions').html('');
     var gen = Math.floor(Math.random()*4);
     mem.push(boxes[gen]);
@@ -32,7 +32,7 @@ $(document).on('keypress',function(){
 function startgame()
 {
     $('.instructions').html(`LEVEL:${gameLevel}`);
-    $(document).off('keypress');
+    $(document).off('keypress touchstart');
     displaybox();
     var i=0;
     console.log(mem);
@@ -73,7 +73,7 @@ function endGame()
     var gen = Math.floor(Math.random()*4);
     mem.push(boxes[gen]);
     console.log("Endgame-2"+mem);
-    $(document).on('keypress',function(){
+    $(document).on('keypress touchstart',function(){
         $('.instructions').html('');
         startgame();
     });
