@@ -1,0 +1,73 @@
+@font-face {
+    font-family: oldgame;
+    src: url('./fonts/yoster.ttf')format('truetype');
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.blue-box{
+    background-color:blue ;
+    width: 200px;
+    height:200px;
+    margin:20px;
+    border-radius: 20%;
+    box-shadow: 8px 8px 4px black;
+}
+.red-box{
+    background-color:red ;
+    width: 200px;
+    height:200px;
+    margin:20px;
+    border-radius: 20%;
+    box-shadow: 8px 8px 4px black;
+}
+.yellow-box{
+    background-color:yellow;
+    width: 200px;
+    height:200px;
+    margin:20px;
+    border-radius: 20%;
+    box-shadow: 8px 8px 4px black;
+}
+.green-box{
+    background-color:green ;
+    width: 200px;
+    height:200px;
+    margin:20px;
+    border-radius: 20%;
+    box-shadow: 8px 8px 4px black;
+}
+h1{
+    font-family: 'oldgame';
+    text-align: center;
+    color: #ffcd8c;
+    text-shadow: 2px 2px 4px black;
+}
+body{
+    /* background-image: url(./images/6840.jpg);
+    background-size: 10%; */
+    background-color: grey;
+}
+.hover
+{
+    transition: all 0.2s ease-in-out;
+}
+.hover:hover{
+    transform: scale(1.05);
+}
+.box{
+    transition: all 0.2s ease-in-out;
+    border-width: 10px;
+    border-style: solid;
+}
+.instructions
+{
+    text-align: center;
+}
+h2
+{
+    color: antiquewhite;
+}
